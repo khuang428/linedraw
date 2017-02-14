@@ -9,6 +9,4 @@ main.o: main.c ml6.h
 run: all
 	./a.out
 clean:
-	rm *.o *~
-	rm a.out lines.png
-	rm *#
+	rm *.o *~ *# a.out lines.png
