@@ -16,10 +16,10 @@ void draw_line(int x0, int y0, int x1, int y1, screen s, color c) {
     plot(s,c,x,y);
     if(d > 0){
       y++;
-      d += B;
+      d += 2B;
     }
     x++;
-    d += A;
+    d += 2A;
   }
 }
 
