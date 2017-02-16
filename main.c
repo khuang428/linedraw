@@ -21,7 +21,7 @@ int main() {
   
   c.red = 0;
   c.green = MAX_COLOR;
-  c.blue = 0;
+  c.blue = 150;
   
   clear_screen(s);
   
@@ -38,8 +38,16 @@ int main() {
 
   square(167,334,s,c);
   square(125,375,s,c);
-  draw_line(0,0,500,500,s,c);
-  draw_line(500,0,0,500,s,c);
+  draw_line(125,125,375,375,s,c);
+  draw_line(125,375,375,125,s,c);
+  draw_line(125,125,334,167,s,c);
+  draw_line(167,167,375,125,s,c);
+  draw_line(125,375,334,334,s,c);
+  draw_line(125,375,167,167,s,c);
+  draw_line(125,125,167,334,s,c);
+  draw_line(334,334,375,125,s,c);
+  draw_line(334,167,375,375,s,c);
+  draw_line(167,334,375,375,s,c);
   
   display(s);
   save_extension(s, "lines.png");
